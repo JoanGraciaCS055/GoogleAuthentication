@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 0Auth 2.0</title>
+	<link rel="icon" href="https://www.google.com/favicon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Google Authentication System</h1>
+        </header>
+        <main>
+            <p>This application uses the Google Authentication for verifying your identity.</p>
+            <a href="{{ url_for('login') }}" class="button">Login with Google</a>
+        </main>
+        <footer>
+            <p>&copy; 2024 Google Auth App</p>
+        </footer>
+    </div>
+</body>
+</html>
