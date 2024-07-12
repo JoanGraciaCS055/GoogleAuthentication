@@ -1,0 +1,6 @@
+Cloud Function: https://europe-west3-valeo-rnes.cloudfunctions.net/ListNames
+		https://us-central1-valeo-rnes.cloudfunctions.net/AuthorizationToken
+
+Managed Service: users-information.apigateway.valeo-rnes.cloud.goog
+
+Gateway: https://users-information-api-gateway-wig85f1.nw.gateway.dev/listNames?age=30
