@@ -38,7 +38,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Running the Application 🏃
 
-### Locally (without Docker)
+### Locally 🖥️
 
 1. **Start the Flask application**
 
