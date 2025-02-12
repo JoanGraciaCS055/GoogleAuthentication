@@ -3,8 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-CLIENT_ID = '70772680045-l3vvleoj3n3275esr58u9bh2togfkioq.apps.googleusercontent.com'
-CLIENT_SECRET = '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'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 REDIRECT_URI = 'https://flask-app-5lgdh7t6mq-ey.a.run.app/oauth2callback'
 
 @app.route('/login')
