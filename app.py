@@ -35,8 +35,13 @@ def oauth2callback():
 
     if not access_token:
         return render_template('error.html', message='Failed to obtain access token')
+    else:
+        userinfo_url = "https://www.googleapis.com/oauth2/v1/userinfo"
+        headers = {'Authorization': f'Bearer {access_token}'}
+        userInformation = requests.get(userinfo_url, headers=headers).json()
+        email = userInformation.get('email')
 
-    return render_template('token.html', token=access_token)
+        return render_template('token.html', token=access_token)
     
 @app.route('/')
 def index():
