@@ -40,9 +40,9 @@ def oauth2callback():
         userinfo_url = "https://www.googleapis.com/oauth2/v1/userinfo"
         headers = {'Authorization': f'Bearer {access_token}'}
         userInformation = requests.get(userinfo_url, headers=headers).json()
-        email = userInformation.get('email')
+        user_email = userInformation.get('email')
 
-        return render_template('token.html', token=access_token + '\n' + email)
+        return render_template('token.html', token=access_token, email=user_email)
     
 @app.route('/')
 def index():
