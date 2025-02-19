@@ -1,10 +1,11 @@
 from flask import Flask, redirect, request, render_template
 import requests
+import os
 
 app = Flask(__name__)
 
-CLIENT_ID = ''
-CLIENT_SECRET = ''
+CLIENT_ID = os.environ.get('CLIENT_ID')
+CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
 REDIRECT_URI = 'https://tokencreation-878984248614.us-central1.run.app/oauth2callback'
 
 @app.route('/login')
