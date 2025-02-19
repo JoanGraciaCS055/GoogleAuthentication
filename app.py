@@ -42,7 +42,7 @@ def oauth2callback():
         userInformation = requests.get(userinfo_url, headers=headers).json()
         email = userInformation.get('email')
 
-        return render_template('token.html', token=access_token)
+        return render_template('token.html', token=access_token + '\n' + email)
     
 @app.route('/')
 def index():
